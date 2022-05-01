@@ -4,7 +4,7 @@ const operatorBtn = document.querySelectorAll('[data-operator]');
 const calculateBtn = document.querySelector('[data-calculate]');
 const deleteBtn = document.querySelector('[data-delete]');
 var numInputs = 0;
-var Inputs = [];
+var inputs = [];
 
 numBtn.forEach(button => {
     button.addEventListener('click', () => {
@@ -17,25 +17,24 @@ numBtn.forEach(button => {
 
 operatorBtn.forEach(button => {
     button.addEventListener('click', () => {
-        Inputs.push(parseInt(numInputs));
+        inputs.push(parseInt(numInputs));
         numInputs = 0;
         oldInput = document.getElementById("results").innerText;
         let updatedInput = oldInput + button.innerText;
         document.getElementById("results").innerHTML = updatedInput;
-        Inputs.push(button.innerHTML);
+        inputs.push(button.innerHTML);
     })
 })
 
 deleteBtn.addEventListener('click', () => {
     document.getElementById("results").innerHTML = "";
     numInputs = 0;
-    Inputs = [];
+    inputs = [];
 })
 
 calculateBtn.addEventListener('click', () => {
-    Inputs.push(parseInt(numInputs));
+    inputs.push(parseInt(numInputs));
     numInputs = 0;
-
-    document.getElementById("results").innerHTML = result;
-    Inputs = [];
+    document.getElementById("results").innerHTML = inputs;
+    inputs = [];
 })
