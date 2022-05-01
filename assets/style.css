@@ -1,7 +1,42 @@
-/* Margin, padding and border defauls changed to 0 and none as defaults */
+/* Margin, padding and border defauls changed to 0 and none as defaults  */
 * {
     margin: 0;
     padding: 0;
     border: none;
 }
 
+#container {
+    max-width: 350px;
+    margin: 0 auto;
+    border: solid 2px black;
+}
+
+#container h1 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#results {
+    min-width: 100%;
+    height: 40px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    text-align: right;
+    line-height: 35px;
+    padding-right: 10px;
+    background-color: bisque;
+}
+
+div table {
+    width: 100%;
+}
+
+td {
+    width: 25%;
+}
+
+button {
+    width: 100%;
+}
