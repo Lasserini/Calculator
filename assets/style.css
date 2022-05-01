@@ -1,0 +1,7 @@
+/* Margin, padding and border defauls changed to 0 and none as defaults */
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
