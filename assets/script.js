@@ -67,11 +67,5 @@ calculateBtn.addEventListener('click', () => {
 
 // History display functionality
 history_btn.addEventListener('click', ()=>{
-    console.log(document.getElementById("history_list").style.display);
-    if(document.getElementById("history_list").style.display = "none" ){
-        document.getElementById("history_list").style.display = "block";
-    }
-    else {
-        document.getElementById("history_list").style.display = "none";
-    }
+    document.getElementById("history_list").style.display = "block";
 })
