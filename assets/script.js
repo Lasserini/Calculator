@@ -60,6 +60,7 @@ calculateBtn.addEventListener('click', () => {
     // Catching devide by zero
     if (result == Infinity) {
         result = "Can't divide by 0!";
+        inputs = "";
     }
     document.getElementById("results").innerHTML = result;
     inputs = result;
