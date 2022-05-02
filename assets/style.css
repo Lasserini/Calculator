@@ -11,6 +11,25 @@
     border: solid 2px black;
 }
 
+#history {
+    max-width: 250px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: lightgrey;
+    border: dotted 2px burlywood;
+}
+
+#history ul {
+    display: none;
+}
+
+#history ul li {
+    list-style: none;
+    padding: 2px;
+    font-size: 90%;
+    border-bottom: dotted 2px burlywood;
+}
+
 #container h1 {
     text-align: center;
     font-size: 24px;
